@@ -1,0 +1,15 @@
+[28-Dec-2023 11:06:26 UTC] PHP Fatal error:  Uncaught TypeError: Symfony\Component\HttpFoundation\RedirectResponse::__construct(): Argument #1 ($url) must be of type string, array given, called in /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Http/Response.php on line 33 and defined in /home/anvq7281/public_html/restaurant/vendor/symfony/http-foundation/RedirectResponse.php:35
+Stack trace:
+#0 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Http/Response.php(33): Symfony\Component\HttpFoundation\RedirectResponse->__construct()
+#1 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Routing/ResponseFactory.php(57): Illuminate\Http\Response->__construct()
+#2 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Routing/ResponseFactory.php(87): Illuminate\Routing\ResponseFactory->make()
+#3 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(658): Illuminate\Routing\ResponseFactory->view()
+#4 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(586): Illuminate\Foundation\Exceptions\Handler->renderHttpException()
+#5 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(492): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(409): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse()
+#7 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(217): Illuminate\Foundation\Exceptions\Handler->render()
+#8 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(194): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#9 /home/anvq7281/public_html/restaurant/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#10 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#11 {main}
+  thrown in /home/anvq7281/public_html/restaurant/vendor/symfony/http-foundation/RedirectResponse.php on line 35

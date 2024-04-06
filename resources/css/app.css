@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: 255, 255, 255;
+    --color-text: 199, 210, 254;
+    --color-border: 199, 210, 254;
+  }
+  .theme-kunyit {
+    --color-background: 255, 222, 23;
+    --color-text: 70, 53, 0;
+    --color-border: 255, 222, 23;
+  }
+  .theme-sands {
+    --color-background: 94, 124, 136;
+    --color-text: 230, 244, 241;
+    --color-border: 94, 124, 136;
+  }
+
+  .active {
+    @apply bg-brand-background text-brand-text;
+  }
+}
+
+
+[x-cloak] {
+    display: none;
+}
+
+
+/* CHECKBOX TOGGLE SWITCH */
+/* @apply rules for documentation, these do not work as inline style */
+.toggle-checkbox:checked {
+  @apply: right-0 border-green-400;
+  right: 0;
+  border-color: #0f172a;
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: #0f172a;
+}
